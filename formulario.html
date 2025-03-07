@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel=stylesheet href=trabalho.css>
+    
+        <title>Filmes</title>
+    </head>
+    <body>
+     <input type="checkbox" id="menu-toggle">
+    
+     <label for="menu-toggle" class="menu-btn">☰ Menu</label>
+     <br>
+    
+     <!-- Menu lateral -->
+     <div class="sidebar">
+         <a href="inicio.html">Início</a>
+         <a href="romance.html">Romance</a>
+         <a href="comedia.html">Comédia</a>
+         <a href="acao.html">Ação</a>
+         <a href="suspense.html">Suspense</a>
+         <a href="terror.html">Terror</a>
+         <a href="formulario.html">Formulário</a>
+     </div>
+    
+     <div class="container">
+        <div class="imagem-borda">
+            <h1>Deixe sua opinião</h1>
+        </div>
+    </div>
+    <br>
+
+    <div class="formapa">
+    <form method= post>
+    <div class="form">
+    <h2>Nome:</h2><input type="text" placeholder="Seu nome">
+
+    <h2>Idade:</h2><input type="number" min="10" max="100" placeholder="Sua idade">
+
+    <h2>E-mail:</h2><input type="email" name="email" placeholder="Seu e-mail" required title="Por favor, insira um e-mail válido">
+
+
+    <label for="sexo"><h2>Sexo:</h2></label>
+    <div class="sexo-opcoes">
+      <label>
+        <input type="radio" name="sexo" value="feminino"><p>Feminino</p>
+      </label>
+      <label>
+        <input type="radio" name="sexo" value="masculino"><p>Masculino</p>
+      </label>
+    </div>
+    <label for="sexo"><h2>Gêneros Favoritos</h2></label>
+    <div class="sexo-opcoes">
+      <label>
+        <input type="checkbox" name="genero" value="Romance"><p>Romance</p>
+      </label>
+      <label>
+        <input type="checkbox" name="genero" value="Animação"><p>Animação</p>
+      </label>
+      <label>
+        <input type="checkbox" name="genero" value="Comedia"><p>Comédia</p>
+      </label>
+      
+      <label>
+        <input type="checkbox" name="genero" value="Suspense"><p>Suspense</p>
+      </label>
+      <label>
+        <input type="checkbox" name="genero" value="Terror"><p>Terror</p>
+      </label>
+      
+      <label>
+        <input type="checkbox" name="genero" value="Acao"><p>Ação</p>
+      </label>
+    
+      
+    </div>
+    <label for="comentario">
+    <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea></label><br>
+    <button type="submit">Enviar</button></form></div>
+    
+    <div class="mapa"><h2>Verifique cinemas próximos!</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14413.771157264006!2d-49.28825034458011!3d-25.423455999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sshopping!5e0!3m2!1spt-BR!2sbr!4v1731001163734!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+</body>
