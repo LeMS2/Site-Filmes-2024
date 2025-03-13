@@ -9,7 +9,7 @@ body{
 .menu-btn {
     font-size: 30px;
     cursor: pointer;
-    background-color: #9cc5df;
+    background-color: #d7fdf6;
     color: #e01c1ca4;
     padding: 10px 20px;
     position: absolute;
@@ -58,7 +58,7 @@ body{
 
 h1{
     font-family: "Lucida Handwriting", cursive;
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     color: #e01c1ca4;
     text-shadow: 5px 5px 17px #4d4042;
@@ -76,7 +76,7 @@ h1:hover {
     
 
 .imagem-borda {
-    width: 800px; 
+    width: 1400px; 
     height: 80px;
     border: 18px solid transparent; 
     border-image: url(rolo.jpg) 40 repeat;
@@ -87,7 +87,7 @@ h1:hover {
     }
 
 .historia {
-    width: 280px;
+    width: 350px;
     height: auto;
     background-color: #588dac; 
     padding: 10px; 
@@ -410,4 +410,131 @@ h4{
     place-items: center;
     background-color: #11809463;
     box-shadow: 8px 0px 17px #000000; /* Sombra */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cor de fundo global (aplicada no body e no menu lateral) */
+body, .sidebar {
+    background-color: #d7fdf6; /* Cor escura para o fundo */
+    color: white;
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+    left: -200px;
+    transition: all 0.3s;
+    padding-top: 60px; /* Abaixando o link "Início" */
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #13726d;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #d7fdf6;
+}
+
+/* Botão do menu (hambúrguer) */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    color: #044d3e;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-btn + .sidebar {
+    left: 0;
+}
+
+/* Conteúdo principal */
+.container {
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagem-borda h1 {
+    font-size: 2em;
+}
+
+/* Seção de texto */
+.historia {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+}
+
+/* Tabela de imagens */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Ajuste para não quebrar as palavras dos títulos */
+td {
+    text-align: center;
+  /*  white-space: nowrap;  Evita quebra de linha */
+    overflow: hidden; /* Esconde conteúdo extra */
+    text-overflow: ellipsis; /* Adiciona "..." quando o texto for muito longo */
+}
+
+/* Estilo das imagens */
+table img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+    table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    table td {
+        margin: 10px;
+    }
+
+    table img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagem-borda h1 {
+        font-size: 1.5em;
+    }
+
+    table img {
+        max-width: 100px;
+    }
+
+    .historia {
+        padding: 0 10px;
+    }
 }
